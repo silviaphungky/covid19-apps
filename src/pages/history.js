@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Row, Col, FormGroup, Collapse,Spinner, Label, Card, CardBody } from 'reactstrap'
+import { Row, Col, FormGroup, Collapse,Spinner, Label, Card, CardBody, Container } from 'reactstrap'
 import CovidApi from '../service/covid-api'
 import { Line } from 'react-chartjs-2'
 import InputSearch from '../atoms/input/input-search'
@@ -535,6 +535,39 @@ const History = () => {
 
         </CardBody>
       </Card>
+
+      <div className='bg-blue'>
+        <Container className='text-center mt-4'>
+          <Row>
+            <Col>
+              <a 
+                className='text-white'
+                href='https://github.com/silviaphungky'
+              >
+                <span className='pr-2'>
+                  <i className="fab fa-github"/>
+                </span>
+                <span>
+                silviaphungky
+                </span>
+              </a>
+            </Col>
+            <Col>
+              <a 
+                className='text-white'
+                href='https://www.instagram.com/_sisilp/'
+              >
+                <span>
+                  <i className="fab fa-instagram" />
+                </span>
+                <span>
+                _sisilp
+                </span>
+              </a>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   )
 }
