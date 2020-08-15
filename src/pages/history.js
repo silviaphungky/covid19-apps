@@ -173,6 +173,7 @@ const History = () => {
               yRecovery.push(data.cases.recovered)
               yDeath.push(data.deaths.total)
             }
+            return null
           })
           if(isPlot['active cases']) {
             yAxis['active cases']=yActive
@@ -184,7 +185,7 @@ const History = () => {
             yAxis['total recovered']=yRecovery
           }
 
-          fetchChart(label, yAxis)
+          return fetchChart(label, yAxis)
         })
       
     }
@@ -246,7 +247,7 @@ const History = () => {
           const cases = data.cases
           const deaths = data.deaths
           const time = new Date(data.time)
-          
+
           setSelectetdCountryStatistic(country)
           setCases(cases)
           setDeaths(deaths)
