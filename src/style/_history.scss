@@ -1,0 +1,50 @@
+.covid__header-img {
+  background-image: url(https://cdn.dribbble.com/users/604891/screenshots/10823757/media/0065ea4f42f5b18d3f29b5534f7c4a11.png);
+  background-size: 100%;
+  margin-top: -20%;
+  padding-top: 52%;
+  padding-bottom: 8%;
+}
+
+.covid__header-text {
+  color: #EFF2F6;
+  margin: 0;
+  text-align: center;
+}
+
+.covid__card-wrapper {
+  border-radius: 2rem !important;
+  width: 100%;
+  margin-top: -8%;
+}
+
+.covid__text--nowrap {
+  white-space: nowrap;
+}
+
+.covid__cursor--pointer {
+  cursor: pointer;
+}
+
+.covid__recovered-text {
+  position: absolute;
+  bottom: 0;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.covid__statictic-card-wrapper {
+  background-color: rgba(173,216,230, 0.2) !important;
+  border: none !important;
+  padding: 1rem 0.5rem;
+}
+
+.covid__navtab--scrollable {
+  flex-wrap: nowrap !important;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
