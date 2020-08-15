@@ -19,16 +19,16 @@ const StatisticCard = ({
             { active }
           </strong>
         </div>
-        <h5>
+        <h6>
           <small className='text-gray'>
             { newCase }
           </small>
-        </h5>
-        <h5 className='mt-3'>
+        </h6>
+        <h6 className='mt-3'>
           <small className='text-gray'>
             Active
           </small>
-        </h5>
+        </h6>
       </h6>
     </Col>
     <Col className='position-relative text-center'>
@@ -42,11 +42,11 @@ const StatisticCard = ({
           </strong>
         </div>
 
-        <h5 className='covid__recovered-text mt-3'>
+        <h6 className='covid__recovered-text mt-3'>
           <small className='text-gray'>
             Recovered
           </small>
-        </h5>
+        </h6>
       </h6>
     </Col>
     <Col className='text-center'>
@@ -59,16 +59,16 @@ const StatisticCard = ({
             { deaths }
           </strong>
         </div>
-        <h5>
+        <h6>
           <small className='text-gray'>
             { newDeaths }
           </small>
-        </h5>
-        <h5 className='mt-3'>
+        </h6>
+        <h6 className='mt-3'>
           <small className='text-gray'>
             Deaths
           </small>
-        </h5>
+        </h6>
       </h6>
     </Col>
   </Row>
