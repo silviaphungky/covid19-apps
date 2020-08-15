@@ -55,7 +55,6 @@ const History = () => {
     deaths : 0,
     total  : 0
   })
-  const [tests, setTests] = useState({})
   const [time, setTime] = useState('')
 
   const [worldCases, setWorldCases] = useState({
@@ -68,7 +67,6 @@ const History = () => {
     deaths : 0,
     total  : 0
   })
-  const [worldTests, setWorldTests] = useState({})
   const [worldTime, setWorldTime] = useState('')
 
 
@@ -100,12 +98,10 @@ const History = () => {
         const data = res.data.response[0]
         const cases = data.cases
         const deaths = data.deaths
-        const tests = data.tests
         const time = new Date(data.time)
         
         setWorldCases(cases)
         setWorldDeaths(deaths)
-        setWorldTests(tests)
         setWorldTime(time.toDateString())
       })
   }
@@ -249,12 +245,11 @@ const History = () => {
           const country = data.country
           const cases = data.cases
           const deaths = data.deaths
-          const tests = data.tests
           const time = new Date(data.time)
+          
           setSelectetdCountryStatistic(country)
           setCases(cases)
           setDeaths(deaths)
-          setTests(tests)
           setTime(time.toDateString())
         })
     }
