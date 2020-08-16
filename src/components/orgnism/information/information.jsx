@@ -6,30 +6,24 @@ import CollapseTitleBlock from '../../molecules/collapse-title-block/collapse-ti
 import FaFileAlt from '../../atoms/fontawesome/file-alt/fa-file-alt'
 
 const propTypes = {
-  isOpen          : PropTypes.object,
-  setIsOpen       : PropTypes.func,
-  activeTab       : PropTypes.number,
-  setActiveTab    : PropTypes.func,
-  openSymptoms    : PropTypes.object,
-  setOpenSymptoms : PropTypes.func
+  isOpen       : PropTypes.object,
+  setIsOpen    : PropTypes.func,
+  activeTab    : PropTypes.number,
+  setActiveTab : PropTypes.func
 }
 
 const defaultProps = {
-  isOpen          : {},
-  setIsOpen       : ()=> {},
-  activeTab       : 1,
-  setActiveTab    : ()=> {},
-  openSymptoms    : {},
-  setOpenSymptoms : ()=> {}
+  isOpen       : {},
+  setIsOpen    : ()=> {},
+  activeTab    : 1,
+  setActiveTab : ()=> {}
 }
 
 const Information = ({
   isOpen,
   setIsOpen,
   activeTab,
-  setActiveTab,
-  openSymptoms,
-  setOpenSymptoms
+  setActiveTab
 }) => {
 
   const handleClickCollapse = () => {
@@ -50,8 +44,6 @@ const Information = ({
           <NavTab 
             activeTab={ activeTab }
             setActiveTab={ setActiveTab }
-            openSymptoms={ openSymptoms }
-            setOpenSymptoms={ setOpenSymptoms }
           />
         </Collapse>
       </CardBody>

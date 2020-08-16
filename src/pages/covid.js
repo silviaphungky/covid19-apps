@@ -68,11 +68,6 @@ const Covid = () => {
 
   const [activeTab, setActiveTab] = useState(1)
 
-  const [openSymptoms, setOpenSymptoms] = useState({
-    less    : false,
-    serious : false
-  })
-
   useEffect(()=> {
     fetchCountry()
     fetchWorldData()
@@ -301,8 +296,6 @@ const Covid = () => {
                 setIsOpen={ setIsOpen }
                 activeTab={ activeTab }
                 setActiveTab={ setActiveTab }
-                openSymptoms={ openSymptoms }
-                setOpenSymptom={ setOpenSymptoms }
               />
             </Col>
           </Row>
