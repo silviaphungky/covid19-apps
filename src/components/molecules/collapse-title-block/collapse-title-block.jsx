@@ -8,14 +8,14 @@ import FaChevronDown from '../../atoms/fontawesome/chevron-down/fa-chevron-down'
 
 const propTypes = {
   text                : PropTypes.string,
-  isOpen              : PropTypes.object,
-  icon                : PropTypes.elementType,
+  isOpen              : PropTypes.bool,
+  icon                : PropTypes.object,
   handleClickCollapse : PropTypes.func
 }
 
 const defaultProps = {
   text                : 'statistic',
-  isOpen              : {},
+  isOpen              : false,
   icon                : <FaCalender />,
   handleClickCollapse : () => {alert('collapse clicked')}
 }

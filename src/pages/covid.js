@@ -42,26 +42,26 @@ const Covid = () => {
   }
 
   const [cases, setCases] = useState({
-    active    : 0,
-    new       : 0,
-    recovered : 0
+    active    : '0',
+    new       : '0',
+    recovered : '0'
   })
   const [deaths, setDeaths] = useState({
-    active : 0,
-    deaths : 0,
-    total  : 0
+    active : '0',
+    deaths : '0',
+    total  : '0'
   })
   const [time, setTime] = useState('')
 
   const [worldCases, setWorldCases] = useState({
-    active    : 0,
-    new       : 0,
-    recovered : 0
+    active    : '0',
+    new       : '0',
+    recovered : '0'
   })
   const [worldDeaths, setWorldDeaths] = useState({
-    active : 0,
-    deaths : 0,
-    total  : 0
+    active : '0',
+    deaths : '0',
+    total  : '0'
   })
   const [worldTime, setWorldTime] = useState('')
 

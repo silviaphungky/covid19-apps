@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const propTypes = {
   href     : PropTypes.string,
-  icon     : PropTypes.elementType,
+  icon     : PropTypes.object,
   username : PropTypes.string
 }
 

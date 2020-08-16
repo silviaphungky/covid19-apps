@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import FaExclamationTriangle from '../../atoms/fontawesome/excalamtion-triangle/fa-exclamation-triangle'
 
 const propTypes = {
-  icon    : PropTypes.elementType,
+  icon    : PropTypes.object,
   cases   : PropTypes.string,
   newCase : PropTypes.string,
   text    : PropTypes.string,

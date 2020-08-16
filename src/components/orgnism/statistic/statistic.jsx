@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
 const propTypes = {
   time                     : PropTypes.string,
   isOpen                   : PropTypes.object,
-  countryOptions           : PropTypes.object,
+  countryOptions           : PropTypes.array,
   handleClickCountry       : PropTypes.func,
   selectedCountryStatistic : PropTypes.string,
   active                   : PropTypes.string,
@@ -23,7 +23,7 @@ const propTypes = {
 const defaultProps = {
   time                     : '',
   isOpen                   : {},
-  countryOptions           : {},
+  countryOptions           : [],
   handleClickCountry       : ()=> {},
   selectedCountryStatistic : '',
   active                   : '',
