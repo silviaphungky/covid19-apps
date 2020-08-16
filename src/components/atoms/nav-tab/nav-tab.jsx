@@ -1,7 +1,6 @@
 import React from 'react'
 import { Nav, NavItem, NavLink, TabContent, TabPane, Row, Col, Collapse } from 'reactstrap'
 import PropTypes from 'prop-types'
-import { useEffect } from 'react'
 import { useState } from 'react'
 
 const propTypes = {
