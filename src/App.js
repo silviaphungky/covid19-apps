@@ -1,12 +1,12 @@
 import React from 'react'
-import History from './pages/history'
+import Covid from './pages/covid'
 
 function App() {
 
 
   return (
     <>
-      <History />  
+      <Covid />  
     </>
   )
 }
