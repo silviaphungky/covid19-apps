@@ -27,6 +27,9 @@ docker-compose up -d
 docker-compose down
 ```
 
+## Live URL
+https://infallible-wright-59785e.netlify.app/
+
 ## Authors
 
 [Silvia Pungky](github.com/silviaphungky)
